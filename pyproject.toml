@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fractionkit"
+version = "0.1.0"
+description = "分数条教具：A4 可打印、可裁剪的分数/小数/百分数对照卡"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "eastyou" }]
+keywords = [
+  "fraction",
+  "math",
+  "education",
+  "manipulative",
+  "print",
+  "cli",
+]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Environment :: Console",
+  "Topic :: Education",
+]
+
+[project.scripts]
+fractionkit = "fractionkit.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/eastyou/fractionkit"
+Source = "https://github.com/eastyou/fractionkit"
+
+[tool.setuptools]
+packages = ["fractionkit"]
